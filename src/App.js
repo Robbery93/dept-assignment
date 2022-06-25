@@ -7,14 +7,18 @@ import bol from "./assets/bol.jpg"
 import kempen from "./assets/kempen.jpg";
 import philips from "./assets/philips.jpg";
 import gemeentemuseum from "./assets/gemeentemuseum.jpg"
+import ClientScaledLeft from "./components/ClientScaledLeft/ClientScaledLeft";
+import florensis from './assets/florensis.jpg';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
         <div className="main_content">
+
         <BigBanner />
           <FilterBanner />
+
           <div className="client_cards">
             <ClientCard
                 client="Bol.com"
@@ -37,6 +41,11 @@ function App() {
                 src={gemeentemuseum} alt="Gemeentemuseum"
             />
           </div>
+
+          <ClientScaledLeft client="Florensis"
+                            text="Rethinking the ecosystem"
+                            src={florensis}
+                            alt="Florensis" />
         </div>
     </div>
   );

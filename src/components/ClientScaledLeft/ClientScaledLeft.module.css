@@ -1,0 +1,46 @@
+.scaled {
+    width: 100vw;
+    display: flex;
+}
+
+.scaled__img {
+    z-index: -1;
+    width: 66vw;
+    height: fit-content;
+}
+
+.scaled__container {
+    height: calc(.67*66vw);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.scaled__container > section {
+    align-self: flex-end;
+    padding: 0 0 1.5rem 1.5rem;
+}
+
+.scaled__container > img {
+    z-index: -1;
+    position: absolute;
+}
+
+.scaled__container h4,
+.scaled__container p,
+.scaled__container small {
+    color: #FFFFFF;
+}
+
+.scaled__container h4 {
+    text-transform: uppercase;
+    font-size: var(--XXS);
+}
+
+.scaled__container p {
+    font-size: var(--M);
+}
+
+.scaled__container small {
+    font-size: var(--XXS);
+}

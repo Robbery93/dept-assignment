@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './BigBanner.module.css';
-import bannerImage from '../../assets/BannerImage.jpg';
 
 const BigBanner = () => {
     return (
