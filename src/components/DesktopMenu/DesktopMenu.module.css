@@ -1,0 +1,80 @@
+.menu_container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 3rem;
+    position: relative;
+    background-color: var(--black);
+}
+
+/* countries styles */
+
+.countries {
+    width: fit-content;
+    padding: 1rem;
+    position: absolute;
+}
+
+.countries > p {
+    font-size: var(--XXS);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.countries_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.countries_list > li {
+    color: #FFFFFF;
+    list-style: none;
+    width: fit-content;
+}
+
+/* tried to make a traingle using borders, but wasn't succesfull */
+.countries_list > li::before {
+    content: ">";
+    display: none;
+    margin-right: .5rem;
+    width: 0;
+    height: 0;
+}
+
+.countries_list > li:hover::before {
+    display: inline;
+}
+
+/* menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu > li {
+    text-align: right;
+    color: #FFFFFF;
+    font-size: var(--L);
+    width: 100%;
+}
+
+.menu > li::after {
+    flex-grow: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.menu > li::before {
+    content: ">";
+    display: none;
+    margin-right: .5rem;
+    width: 0;
+    height: 0;
+}
+
+.menu > li:hover::before {
+    display: inline;
+}

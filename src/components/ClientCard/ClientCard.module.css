@@ -1,0 +1,38 @@
+.client_card {
+    width: 50vw;
+    height: calc(0.79*50vw);
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.client_card__img {
+    z-index: -1;
+    width: 50vw;
+    height: fit-content;
+    position: absolute;
+}
+
+.client_card__text {
+    padding: 0 0 2rem 2rem;
+}
+
+.client_card__text  h4,
+.client_card__text  p,
+.client_card__text  small {
+    color: #FFFFFF;
+}
+
+.client_card__text  h4 {
+    text-transform: uppercase;
+    font-size: var(--XXS);
+}
+
+.client_card__text  p {
+    font-size: var(--M);
+}
+
+.client_card__text small {
+    font-size: var(--XXS);
+}

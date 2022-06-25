@@ -1,0 +1,26 @@
+.big_banner {
+    max-width: 100vw;
+    height: calc(0.44*100vw);
+    background-image: url("../../assets/BannerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 4rem 4rem;
+}
+
+.big_banner__text {
+    width: 580px;
+    color: rgba(255, 255, 255, 1);
+    background: transparent;
+    cursor: default;
+}
+
+.big_banner__text > h4 {
+    font-size: var(--XXS);
+    margin-bottom: 2rem;
+}
+
+.big_banner__text > p {
+    font-size: var(--M);
+}

@@ -1,0 +1,19 @@
+.filter {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.filter > p {
+    color: var(--grey);
+}
+
+.filter a,
+.filter a:hover,
+.filter a:active,
+.filter a:visited {
+    color: var(--black)
+}

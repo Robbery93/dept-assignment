@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import BigBanner from "./components/BigBanner/BigBanner";
+import FilterBanner from "./components/FilterBanner/FilterBanner";
+import ClientCard from "./components/ClientCard/ClientCard";
+import bol from "./assets/bol.jpg"
+import kempen from "./assets/kempen.jpg";
+import philips from "./assets/philips.jpg";
+import gemeentemuseum from "./assets/gemeentemuseum.jpg"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+        <div className="main_content">
+        <BigBanner />
+          <FilterBanner />
+          <div className="client_cards">
+            <ClientCard
+                client="Bol.com"
+                text="A Summer island in the Netherlands"
+                src={bol} alt="Bol.com"
+            />
+            <ClientCard
+                client="Kempen"
+                text="Not some average banking website"
+                src={kempen} alt="Kempen"
+            />
+            <ClientCard
+                client="Philips"
+                text="Beautiful design meets innovative technology"
+                src={philips} alt="Philips"
+            />
+            <ClientCard
+                client="Gemeentemuseum"
+                text="A 100 years of Mondriaan & De Stijl"
+                src={gemeentemuseum} alt="Gemeentemuseum"
+            />
+          </div>
+        </div>
     </div>
   );
 }

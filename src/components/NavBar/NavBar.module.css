@@ -1,0 +1,76 @@
+.navbar {
+    width: 100vw;
+    padding: 3rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+    position: sticky;
+    top: 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.list  {
+    list-style: none;
+    display: flex;
+}
+
+.list > li {
+    color: #FFF;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-size: var(--XXS);
+}
+
+.list > li::after {
+    content: "";
+    display: block;
+    top: 1rem;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width .1s ease-in-out;
+}
+
+.list > li:hover,
+.list > li:hover::after {
+    width: 100%;
+}
+
+.menu_button__dots,
+.menu_button__dots::before,
+.menu_button__dots::after {
+    background-color: var(--black);
+    font-size: var(--S);
+    content: "•";
+    display: inline;
+    color: #FFFFFF;
+}
+
+.menu_button__X {
+    position: relative;
+    background-color: var(--black);
+}
+
+.menu_button__X::before,
+.menu_button__X::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    height: 3px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+.menu_button__X::before {
+    transform: rotate(45deg);
+}
+
+.menu_button__X::after {
+    transform: rotate(-45deg);
+}
