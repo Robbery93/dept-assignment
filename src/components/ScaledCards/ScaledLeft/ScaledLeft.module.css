@@ -1,6 +1,7 @@
 .scaled {
     width: 100vw;
     display: flex;
+    justify-content: space-between;
 }
 
 .scaled__img {
@@ -18,18 +19,12 @@
 
 .scaled__container > section {
     align-self: flex-end;
-    padding: 0 0 1.5rem 1.5rem;
+    padding: 0 0 3rem 3rem;
 }
 
 .scaled__container > img {
     z-index: -1;
     position: absolute;
-}
-
-.scaled__container h4,
-.scaled__container p,
-.scaled__container small {
-    color: #FFFFFF;
 }
 
 .scaled__container h4 {
@@ -38,9 +33,25 @@
 }
 
 .scaled__container p {
-    font-size: var(--M);
+    font-size: var(--L);
 }
 
 .scaled__container small {
     font-size: var(--XXS);
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.scaled > aside {
+    width: calc(100vw - 66vw);
+    padding: 3rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
