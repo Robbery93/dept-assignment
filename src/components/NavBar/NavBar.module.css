@@ -21,6 +21,7 @@
 }
 
 .list > li {
+    cursor: pointer;
     color: #FFF;
     text-transform: uppercase;
     margin-right: 1rem;
@@ -45,6 +46,8 @@
 .menu_button__dots,
 .menu_button__dots::before,
 .menu_button__dots::after {
+    cursor: pointer;
+    border: none;
     background-color: var(--black);
     font-size: var(--S);
     content: "•";
@@ -53,6 +56,8 @@
 }
 
 .menu_button__X {
+    border: none;
+    cursor: pointer;
     position: relative;
     background-color: var(--black);
 }

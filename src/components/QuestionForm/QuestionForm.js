@@ -38,8 +38,8 @@ const QuestionForm = () => {
                         {...register("message", {
                             required: "This field is required",
                             minLength: {
-                                value: 20,
-                                message: "Try to be more specific with your question"
+                                value: 50,
+                                message: "Try to be more specific with your question (type at least 50 characters)"
                             }
                         })}
                     />

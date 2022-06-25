@@ -13,7 +13,7 @@ const DesktopMenu = () => {
                     <li>UNITED STATES</li>
                     <li>IRELAND</li>
                     <li>UNITED KINGDOM</li>
-                    <li>DEUTCHLAND</li>
+                    <li>DEUTSCHLAND</li>
                     <li>SCHWEIZ</li>
                 </ul>
             </div>

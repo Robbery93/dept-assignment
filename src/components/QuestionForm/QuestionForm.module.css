@@ -33,7 +33,6 @@
 .question label {
     display: block;
     font-size: var(--XXS);
-    margin-bottom: 5px;
 }
 
 .question h2 {
@@ -43,6 +42,7 @@
 .question input,
 .question textarea {
     width: 295px;
+    padding: .5rem;
     border-left: transparent;
     border-top: transparent;
     border-right: transparent;
@@ -74,4 +74,14 @@
     background-color: #FFFFFF;
     border: var(--black) 1px solid;
     border-radius: 25px;
+    transition: all .2s ease-in-out;
+}
+
+.submit_btn:hover {
+    color: #FFFFFF;
+    background-color: var(--black);
+}
+
+.submit_btn:active {
+    background-color: var(--dark-grey);
 }

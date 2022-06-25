@@ -42,3 +42,13 @@
 .client_card__container small {
     font-size: var(--XXS);
 }
+
+.client_card__container a {
+    text-decoration: none;
+}
+
+.client_card__container a:hover,
+.client_card__container a:active,
+.client_card__container a:visited {
+    text-decoration: underline;
+}

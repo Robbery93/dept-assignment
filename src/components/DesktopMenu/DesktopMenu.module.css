@@ -4,6 +4,7 @@
     padding: 0 3rem;
     position: relative;
     background-color: var(--black);
+    z-index: 1;
 }
 
 /* countries styles */
@@ -12,6 +13,7 @@
     width: fit-content;
     padding: 1rem;
     position: absolute;
+    background-color: var(--black);
 }
 
 .countries > p {
@@ -26,6 +28,7 @@
 }
 
 .countries_list > li {
+    cursor: pointer;
     color: #FFFFFF;
     list-style: none;
     width: fit-content;
@@ -52,6 +55,7 @@
 }
 
 .menu > li {
+    cursor: pointer;
     text-align: right;
     color: #FFFFFF;
     font-size: var(--L);

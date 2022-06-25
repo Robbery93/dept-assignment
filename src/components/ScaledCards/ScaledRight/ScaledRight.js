@@ -9,8 +9,8 @@ const ScaledRight = ({ src, alt, client, text, }) => {
 
             <aside>
                 <ClientNote
-                    client="Microsoft"
-                    text="Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels"
+                    client="Amazon"
+                    text="Starting with delivering through drones"
                 />
                 <span className={styles.line}></span>
                 <ClientNote
