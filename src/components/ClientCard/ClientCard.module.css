@@ -18,18 +18,15 @@
 
 .client_card__container > section {
     align-self: flex-end;
-    padding: 0 0 1.5rem 1.5rem;
+    padding: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
 }
 
 .client_card__container > img {
     z-index: -1;
     position: absolute;
-}
-
-.client_card__container  h4,
-.client_card__container  p,
-.client_card__container  small {
-    color: #FFFFFF;
 }
 
 .client_card__container  h4 {
@@ -38,7 +35,8 @@
 }
 
 .client_card__container  p {
-    font-size: var(--M);
+    line-height: 3rem;
+    font-size: var(--L);
 }
 
 .client_card__container small {

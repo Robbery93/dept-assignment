@@ -1,21 +1,11 @@
 import React from 'react';
-import styles from "./ScaledLeft.module.css";
+import styles from "./ScaledRight.module.css";
 import ClientNote from "../../ClientNote/ClientNote";
 
-const ScaledLeft = ({ src, alt, client, text, }) => {
+const ScaledRight = ({ src, alt, client, text, }) => {
+
     return (
         <article className={styles.scaled}>
-
-            <div className={styles.scaled_card}>
-                <div className={styles.scaled__container}>
-                    <img src={src} alt={alt} className={styles.scaled__img} loading="lazy"/>
-                    <section>
-                        <h4>{client}</h4>
-                        <p>{text}</p>
-                        <small>Read more</small>
-                    </section>
-                </div>
-            </div>
 
             <aside>
                 <ClientNote
@@ -35,8 +25,17 @@ const ScaledLeft = ({ src, alt, client, text, }) => {
             </aside>
 
 
+                <section className={styles.scaled__container}>
+                    <img src={src} alt={alt} className={styles.scaled__img} loading="lazy"/>
+                    <section>
+                        <h4>{client}</h4>
+                        <p>{text}</p>
+                        <small>Read more</small>
+                    </section>
+                </section>
+
         </article>
     );
 };
 
-export default ScaledLeft;
+export default ScaledRight;

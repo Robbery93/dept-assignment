@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from "./ClientNote.module.css"
 
-const CleintNote = () => {
+const ClientNote = ({ client, text }) => {
     return (
-        <div>
-
-        </div>
+        <section className={styles.client_note}>
+            <h4>{client}</h4>
+            <p>{text}</p>
+            <small>Read more</small>
+        </section>
     );
 };
 
-export default CleintNote;
+export default ClientNote;

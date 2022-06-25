@@ -1,7 +1,6 @@
 .scaled {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
 }
 
 .scaled__img {
@@ -44,10 +43,12 @@
     width: 80%;
     height: 1px;
     background-color: #FFFFFF;
+    margin: 1rem 0;
 }
 
 .scaled > aside {
     width: calc(100vw - 66vw);
+    max-height: inherit;
     padding: 3rem;
     background-color: var(--black);
     display: flex;

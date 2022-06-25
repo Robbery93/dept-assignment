@@ -1,0 +1,21 @@
+.quote {
+    width: 100vw;
+    height: 284px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 3rem;
+}
+
+.quote > h3 {
+    font-size: var(--S);
+    text-align: center;
+}
+
+.quote > p {
+    font-size: var(--XS);
+    text-transform: uppercase;
+}

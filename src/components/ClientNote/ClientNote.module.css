@@ -1,0 +1,16 @@
+.client_note {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.client_note > h4 {
+    font-size: var(--XXS);
+    font-weight: bold;
+}
+
+.client_note > p,
+.client_note > small {
+    font-size: var(--XXS);
+}
