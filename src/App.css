@@ -9,7 +9,6 @@
 }
 
 .main_content {
-  width: 100vw;
   position: absolute;
   top: 115px;
   display: flex;
@@ -38,5 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   --CTA: 18px;
 
   --black: rgba(12, 12, 12, 1);
+  --light-grey: rgba(221, 221, 221, 1);
   --grey: rgba(163, 163, 163, 1);
+  --dark-grey: rgba(62, 62, 62, 1);
+  --red: rgba(255, 41, 41, 1);
 }

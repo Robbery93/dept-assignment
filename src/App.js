@@ -20,6 +20,8 @@ import ClientQuote from "./components/ClientQuote/ClientQuote";
 import libertyglobal from "./assets/libertyglobal.jpg";
 import arla from "./assets/arla.jpg";
 import ClientsGrid from "./components/ClientsGrid/ClientsGrid";
+import QuestionForm from "./components/QuestionForm/QuestionForm";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -119,6 +121,10 @@ function App() {
           </section>
 
           <ClientsGrid />
+
+          <QuestionForm />
+
+          <Footer />
 
         </main>
     </div>
