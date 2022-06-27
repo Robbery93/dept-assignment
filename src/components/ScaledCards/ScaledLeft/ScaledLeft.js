@@ -11,7 +11,7 @@ const ScaledLeft = ({ src, alt, client, text, }) => {
                     <section>
                         <h4>{client}</h4>
                         <p>{text}</p>
-                        <small>Read more</small>
+                        <small><a>Read more</a></small>
                     </section>
                 </section>
 

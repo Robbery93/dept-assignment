@@ -1,4 +1,6 @@
-.big_banner {
+.hero {
+    width: 100vw;
+    max-width: 100%;
     height: calc(0.44*100vw);
     background-image: url("../../assets/BannerImage.jpg");
     background-repeat: no-repeat;
@@ -8,17 +10,25 @@
     padding: 0 0 4rem 4rem;
 }
 
-.big_banner__text {
+.hero__text {
     width: 580px;
     background: transparent;
     cursor: default;
 }
 
-.big_banner__text > h4 {
+.hero__text > h4 {
     font-size: var(--XXS);
     margin-bottom: 2rem;
 }
 
-.big_banner__text > p {
+.hero__text > p {
     font-size: var(--M);
+}
+
+@media screen and (max-width: 411px) {
+    .hero {
+        height: 415px;
+        background-position: center;
+        padding: 0 0 2rem 2rem;
+    }
 }

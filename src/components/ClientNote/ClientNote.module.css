@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    margin: 1rem 0;
 }
 
 .client_note > h4 {
@@ -13,4 +14,27 @@
 .client_note > p,
 .client_note > small {
     font-size: var(--XXS);
+}
+
+.client_note a,
+.client_note a:active,
+.client_note a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+}
+
+.client_note a:hover {
+    color: var(--purple)
+}
+
+@media screen and (max-width: 411px) {
+
+    .client_note > h4 {
+        font-weight: normal;
+    }
+
+    .client_note > small {
+        display: none;
+    }
 }

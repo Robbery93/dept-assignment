@@ -1,11 +1,11 @@
 .client_card {
-    width: 50vw;
+    width: 50%;
     height: calc(0.79*50vw);
 }
 
 .client_card__img {
     z-index: -1;
-    width: 50vw;
+    width: 100%;
     height: fit-content;
 }
 
@@ -18,7 +18,7 @@
 
 .client_card__container > section {
     align-self: flex-end;
-    padding: 0 0 3rem 3rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
@@ -51,4 +51,27 @@
 .client_card__container a:active,
 .client_card__container a:visited {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 411px) {
+    .client_card {
+        width: 100vw;
+        height: calc(0.79 * 100vw);
+    }
+
+    .client_card__img {
+        width: 100%;
+    }
+
+    .client_card__container > section {
+        padding: 2rem;
+    }
+
+    .client_card__container p {
+        font-size: var(--M);
+    }
+
+    .client_card small {
+        display: none;
+    }
 }

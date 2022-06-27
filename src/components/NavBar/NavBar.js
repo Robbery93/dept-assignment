@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import styles from "./NavBar.module.css"
-import {ReactComponent as LogoWhite} from "../../assets/DEPT® LOGO - 2022 White.svg"
+import {ReactComponent as LogoWhite} from "../../assets/White logo.svg";
+import {ReactComponent as LogoBlack} from "../../assets/Black logo.svg";
+
 import DesktopMenu from "../DesktopMenu/DesktopMenu";
 
 const NavBar = () => {
@@ -10,7 +12,9 @@ const NavBar = () => {
     return (
         <>
             <header className={styles.navbar}>
-                <LogoWhite />
+                <span className={styles.logo_white}><LogoWhite /></span>
+                <span className={styles.logo_black}><LogoBlack /></span>
+
 
                 <div className={styles.navigation} >
                     {!dropdown &&
@@ -27,7 +31,10 @@ const NavBar = () => {
                     {dropdown ?
                         <button onClick={() => toggleDropdown(!dropdown)} className={styles.menu_button__X}></button>
                     :
+                        <>
                         <button onClick={() => toggleDropdown(!dropdown)} className={styles.menu_button__dots}>•</button>
+                        <button onClick={() => toggleDropdown(!dropdown)} className={styles.menu_button__txt}>MENU</button>
+                        </>
                     }
                 </div>
             </header>

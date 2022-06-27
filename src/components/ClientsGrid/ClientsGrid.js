@@ -23,18 +23,18 @@ const ClientsGrid = () => {
             </section>
 
             <div className={styles.clients_grid}>
+                <Google />
                 <Levi />
                 <Netflix />
+                <Spotify />
                 <Patagonia />
                 <Fujitsu />
+                <Adyen />
                 <Audi />
                 <Triumph />
+                <Tesla />
                 <Asos />
                 <Takeaway />
-                <Adyen />
-                <Google />
-                <Tesla />
-                <Spotify />
             </div>
         </article>
     );

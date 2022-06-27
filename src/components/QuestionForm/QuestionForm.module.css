@@ -1,22 +1,25 @@
-.inputs{
-    display: flex;
-    width: calc((2 * 295px) + 2rem);
-    column-gap: 2rem;
-}
-
-.inputs_left {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
 .question {
     width: 100vw;
+    max-width: 100%;
     height: 400px;
     padding: 3rem;
     display: flex;
     column-gap: 3rem;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
 
 .question h2,
 .question label,
@@ -30,17 +33,18 @@
     text-transform: uppercase;
 }
 
-.question label {
+.question h2 {
+    width: 305px;
+    font-size: var(--L);
+}
+
+.inputs label {
     display: block;
     font-size: var(--XXS);
 }
 
-.question h2 {
-    width: 305px;
-}
-
-.question input,
-.question textarea {
+.inputs input,
+.inputs textarea {
     width: 295px;
     padding: .5rem;
     border-left: transparent;
@@ -49,22 +53,18 @@
     border-bottom: 2px solid var(--light-grey);
 }
 
-.question input {
+.inputs input,
+.inputs textarea {
     outline: none;
 }
 
-.question textarea {
+.inputs textarea {
     resize: none;
-    outline: none;
 }
 
-.question small {
+.inputs small {
     display: block;
     color: var(--red)
-}
-
-.question h2 {
-    font-size: var(--L);
 }
 
 .submit_btn {
@@ -74,14 +74,38 @@
     background-color: #FFFFFF;
     border: var(--black) 1px solid;
     border-radius: 25px;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .submit_btn:hover {
     color: #FFFFFF;
-    background-color: var(--black);
+    background-color: var(--purple);
+    border-color: var(--purple);
 }
 
 .submit_btn:active {
     background-color: var(--dark-grey);
+}
+
+@media screen and (max-width: 411px) {
+    .question {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .question > h2 {
+        font-size: var(--S);
+    }
+
+    .submit_btn {
+        width: 100%;
+        color: var(--purple);
+        border: var(--purple) 1px solid;
+    }
 }

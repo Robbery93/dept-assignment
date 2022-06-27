@@ -1,5 +1,6 @@
 .quote {
     width: 100vw;
+    max-width: 100%;
     height: 284px;
     background-color: var(--black);
     display: flex;
@@ -18,4 +19,12 @@
 .quote > p {
     font-size: var(--XS);
     text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width: 411px) {
+    .quote {
+        height: 416px;
+        padding: 2rem;
+    }
 }

@@ -1,5 +1,6 @@
 .filter {
     width: 100vw;
+    max-width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -9,11 +10,29 @@
 
 .filter > p {
     color: var(--grey);
+    font-size: var(--S);
 }
 
 .filter a,
-.filter a:hover,
 .filter a:active,
 .filter a:visited {
     color: var(--black)
+}
+
+.filter a:hover {
+    color: var(--purple);
+}
+
+@media screen and (max-width: 411px) {
+    .filter {
+        background-color: var(--black);
+    }
+
+    .filter > p,
+    .filter a,
+    .filter a:active,
+    .filter a:visited {
+        color: #FFFFFF;
+        font-size: var(--XXS);
+    }
 }

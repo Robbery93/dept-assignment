@@ -1,27 +1,28 @@
 import './App.css';
 import NavBar from "./components/NavBar/NavBar";
-import BigBanner from "./components/BigBanner/BigBanner";
+import Hero from "./components/Hero/Hero";
 import FilterBanner from "./components/FilterBanner/FilterBanner";
 import ClientCard from "./components/ClientCard/ClientCard";
-import bol from "./assets/bol.jpg"
-import kempen from "./assets/kempen.jpg";
-import philips from "./assets/philips.jpg";
-import gemeentemuseum from "./assets/gemeentemuseum.jpg"
 import ScaledLeft from "./components/ScaledCards/ScaledLeft/ScaledLeft";
-import florensis from './assets/florensis.jpg';
-import belightning from "./assets/belightning.jpg";
-import tui from './assets/tui.jpg'
-import chocomel from './assets/chocomel.jpg';
-import jbl from "./assets/jbl.jpg";
-import zalando from "./assets/zalando.jpg";
-import koninklijkebibliotheek from './assets/koninklijkebibliotheek.jpg'
 import ScaledRight from "./components/ScaledCards/ScaledRight/ScaledRight";
 import ClientQuote from "./components/ClientQuote/ClientQuote";
-import libertyglobal from "./assets/libertyglobal.jpg";
-import arla from "./assets/arla.jpg";
 import ClientsGrid from "./components/ClientsGrid/ClientsGrid";
 import QuestionForm from "./components/QuestionForm/QuestionForm";
 import Footer from "./components/Footer/Footer";
+
+import bol from "./assets/cardPhotos/bol.jpg"
+import kempen from "./assets/cardPhotos/kempen.jpg";
+import philips from "./assets/cardPhotos/philips.jpg";
+import gemeentemuseum from "./assets/cardPhotos/gemeentemuseum.jpg"
+import florensis from './assets/cardPhotos/florensis.jpg';
+import belightning from "./assets/cardPhotos/belightning.jpg";
+import tui from './assets/cardPhotos/tui.jpg'
+import chocomel from './assets/cardPhotos/chocomel.jpg';
+import jbl from "./assets/cardPhotos/jbl.jpg";
+import zalando from "./assets/cardPhotos/zalando.jpg";
+import koninklijkebibliotheek from './assets/cardPhotos/koninklijkebibliotheek.jpg'
+import libertyglobal from "./assets/cardPhotos/libertyglobal.jpg";
+import arla from "./assets/cardPhotos/arla.jpg";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       <NavBar />
         <main className="main_content">
 
-        <BigBanner />
+          <Hero />
+
           <FilterBanner />
 
           <section className="client_cards">

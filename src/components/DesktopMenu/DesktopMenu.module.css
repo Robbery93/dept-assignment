@@ -1,10 +1,10 @@
 .menu_container {
     width: 100vw;
     height: 100vh;
-    padding: 0 3rem;
+    padding: 0 3rem 1rem 3rem;
     position: relative;
     background-color: var(--black);
-    z-index: 1;
+    z-index: 100;
 }
 
 /* countries styles */
@@ -34,7 +34,7 @@
     width: fit-content;
 }
 
-/* tried to make a traingle using borders, but wasn't succesfull */
+/* tried to make a triangle using borders, but wasn't succesfull */
 .countries_list > li::before {
     content: ">";
     display: none;
@@ -81,4 +81,20 @@
 
 .menu > li:hover::before {
     display: inline;
+}
+
+@media screen and (max-width: 411px) {
+    .menu_container {
+        height: calc(2 * 100vh);
+    }
+
+    .countries {
+        display: none;
+    }
+
+    .menu > li {
+        font-size: var(--M);
+    }
+
+
 }

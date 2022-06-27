@@ -9,6 +9,8 @@
 }
 
 .main_content {
+  width: 100vw;
+  max-width: 100%;
   position: absolute;
   top: 115px;
   display: flex;
@@ -16,6 +18,8 @@
 }
 
 .client_cards {
+  width: 100vw;
+  max-width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
@@ -41,4 +45,15 @@ h1, h2, h3, h4, h5, h6 {
   --grey: rgba(163, 163, 163, 1);
   --dark-grey: rgba(62, 62, 62, 1);
   --red: rgba(255, 41, 41, 1);
+  --purple: #5115F7;
+}
+
+@media screen and (max-width: 411px) {
+  .main_content {
+    top: 56px;
+  }
+
+  .client_cards {
+    flex-flow: column nowrap;
+  }
 }

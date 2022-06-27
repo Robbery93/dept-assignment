@@ -14,9 +14,9 @@ const QuestionForm = () => {
         <section className={styles.question}>
             <h2>Question? We are here to help!</h2>
 
-            <form className={styles.inputs}
+            <form className={styles.form}
                 onSubmit={handleSubmit(onFormSubmit)}>
-                <div className={styles.inputs_left}>
+                <div className={styles.inputs}>
                 <span>
                     <label htmlFor="name">Name</label>
                     <input
@@ -27,6 +27,18 @@ const QuestionForm = () => {
                         })}
                     />
                     {errors.name && <small>{errors.name.message}</small>}
+                </span>
+
+                <span>
+                    <label htmlFor="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        {...register("email", {
+                            required: "This field is required"
+                        })}
+                    />
+                        {errors.email && <small>{errors.email.message}</small>}
                 </span>
 
                 <span>
@@ -46,20 +58,10 @@ const QuestionForm = () => {
                     {errors.message && <small>{errors.message.message}</small>}
                 </span>
 
-                <button type="submit" className={styles.submit_btn}>SEND</button>
                 </div>
 
-                <span>
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        {...register("email", {
-                            required: "This field is required"
-                        })}
-                    />
-                    {errors.email && <small>{errors.email.message}</small>}
-                </span>
+                <button type="submit" className={styles.submit_btn}>SEND</button>
+
             </form>
         </section>
     );

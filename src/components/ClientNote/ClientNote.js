@@ -6,7 +6,7 @@ const ClientNote = ({ client, text }) => {
         <section className={styles.client_note}>
             <h4>{client}</h4>
             <p>{text}</p>
-            <small>Read more</small>
+            <small><a>Read more</a></small>
         </section>
     );
 };

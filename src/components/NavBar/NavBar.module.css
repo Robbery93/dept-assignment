@@ -1,13 +1,18 @@
 .navbar {
     width:100vw;
+    max-width:100%;
+    height: 115px;
     padding: 3rem;
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 115px;
     position: sticky;
     top: 0;
+}
+
+.logo_black {
+    display: none;
 }
 
 .navigation {
@@ -24,7 +29,7 @@
     cursor: pointer;
     color: #FFF;
     text-transform: uppercase;
-    margin-right: 1rem;
+    margin-right: 4rem;
     font-size: var(--XXS);
 }
 
@@ -43,6 +48,15 @@
     width: 100%;
 }
 
+.menu_button__txt {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: var(--S);
+    color: var(--black);
+}
+
 .menu_button__dots,
 .menu_button__dots::before,
 .menu_button__dots::after {
@@ -59,7 +73,7 @@
     border: none;
     cursor: pointer;
     position: relative;
-    background-color: var(--black);
+    /*background-color: var(--black);*/
 }
 
 .menu_button__X::before,
@@ -78,4 +92,40 @@
 
 .menu_button__X::after {
     transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 411px) {
+    .navbar {
+        background-color: #FFFFFF;
+        height: 56px;
+        padding: 1rem 2rem;
+    }
+
+    .logo_white {
+        display: none;
+    }
+
+    .logo_black {
+        display: inline;
+    }
+
+    .navigation > ul {
+        display: none;
+    }
+
+    .menu_button__dots,
+    .menu_button__dots::before,
+    .menu_button__dots::after {
+        display: none;
+    }
+
+    .menu_button__txt{
+        display: block;
+        font-size: var(--XXS);
+    }
+
+    .menu_button__X::before,
+    .menu_button__X::after {
+        background-color: var(--black);
+    }
 }
